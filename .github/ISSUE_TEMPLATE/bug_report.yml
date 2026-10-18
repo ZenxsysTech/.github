@@ -1,0 +1,48 @@
+name: Bug report
+description: Report something that is not working as documented
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+        **Do not include real credentials, tokens, keys or customer data.**
+        For security vulnerabilities, do not open an issue. Use private vulnerability reporting (see SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The version or commit of this tool you are using.
+      placeholder: "0.7.2"
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: ZenXPAM platform version
+      description: The version of the ZenXPAM platform you are connecting to, if known.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest set of steps that shows the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output or logs
+      description: Paste relevant output. Remove any secret values first.
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, language or runtime version, and how you installed the tool.
