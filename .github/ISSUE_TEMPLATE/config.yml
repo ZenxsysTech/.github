@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/ZenxsysTech/.github/blob/main/SECURITY.md
+    about: Please do not open a public issue for security problems. Follow the security policy.
+  - name: Product questions and demos
+    url: https://zenxsys.com/contact
+    about: Questions about the ZenXPAM platform, pricing or a demo.
